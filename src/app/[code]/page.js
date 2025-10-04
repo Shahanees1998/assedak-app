@@ -11,7 +11,7 @@ export default function CodeRedirectPage() {
     if (!code) return;
 
     // Attempt to open the Aseedak app
-    window.location.href = `aseedak://game/${code}`;
+    window.location.href = `aseedak://profile/${code}`;
 
     // Fallback to Play Store if app not installed
     // const timeout = setTimeout(() => {
@@ -49,7 +49,7 @@ export default function CodeRedirectPage() {
             </p>
             <button
               onClick={() => {
-                window.location.href = `aseedak://game/${code}`;
+                window.location.href = `aseedak://profile/${code}`;
                 setTimeout(() => {
                   window.location.href =
                     "https://play.google.com/store/apps/details?id=com.example.aseedak";
